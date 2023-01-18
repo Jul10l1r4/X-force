@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='getrails',
+    name='XForce',
     version=0.1,
     author="Julio Lira",
     author_email="jul10l1r4@disroot.org",
@@ -22,7 +22,8 @@ setuptools.setup(
         "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
         "Operating System :: OS Independent",
         "Topic :: Security",
-        "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+        "Security :: Threat Intelligence",
+        "Topic :: Internet",
         ],
     )
 
