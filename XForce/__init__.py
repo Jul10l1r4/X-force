@@ -1,5 +1,6 @@
 #!/usr/bin/python3 
 from requests import get
+import XForce.details
 
 api_url = "https://exchange.xforce.ibmcloud.com/api" 
 
@@ -28,4 +29,3 @@ def all(term, auth):
     big_list.append(eval(industries(term, auth))["rows"])
     return big_list
 
-breakpoint()
