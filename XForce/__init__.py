@@ -17,6 +17,10 @@ def threat_groups(term, auth):
     return get(f"{api_url}/threat_groups/search/{term}",
                headers={ 'Authorization': f'Basic {auth}' }).text
 
+def collector(term, auth):
+    return get(f"{api_url}/casefiles/public/fulltext?q={term}",
+               headers={ 'Authorization': f'Basic {auth}' }).text
+
 def industries(term, auth):
     return get(f"{api_url}/industries/search/{term}",
                headers={ 'Authorization': f'Basic {auth}' }).text
@@ -26,6 +30,7 @@ def all(term, auth):
     big_list.append(eval(threat_activities(term, auth))["rows"])
     big_list.append(eval(malware_analysis(term, auth))["rows"])
     big_list.append(eval(threat_groups(term, auth))["rows"])
+    big_list.append(eval(collector(term, auth))["rows"])
     big_list.append(eval(industries(term, auth))["rows"])
     return big_list
 

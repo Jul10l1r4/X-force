@@ -20,6 +20,12 @@ def group(groups_id, auth):
     data['url'] = f'https://exchange.xforce.ibmcloud.com/threat-group/{groups_id}'
     return data
 
+def collector(collector_id, auth): 
+    data = eval(get(f'{api_url}/casefiles/{collector_id}',
+               headers={ 'Authorization': f'Basic {auth}' }).text)
+    data['url'] = f'https://exchange.xforce.ibmcloud.com/collector/{collector_id}'
+    return data
+
 def industry(industries_id, auth): 
     data = eval(get(f'{api_url}/industries/{industries_id}',
                headers={ 'Authorization': f'Basic {auth}' }).text)
