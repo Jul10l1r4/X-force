@@ -11,7 +11,7 @@ pip3 install XForce
 # Use
 Using you API_KEY make a basic authentication. See ![documentation](https://api.xforce.ibmcloud.com/doc/). After make a base64 code → Key + : + Password:
 ```sh
-echo "d2f5f0f9-2995-42c6-b1dd-4c92252da129:06c41d5e-0604-4c7c-a599-300c367d2090" | base64
+printf "d2f5f0f9-2995-42c6-b1dd-4c92252da129:06c41d5e-0604-4c7c-a599-300c367d2090" | base64
 # ZDJmNWYwZjktMjk5NS00MmM2LWIxZGQtNGM5MjI1MmRhMTI5OjA2YzQxZDVlLTA2MDQtNGM3Yy1hNTk5LTMwMGMzNjdkMjA5MAo=
 ``` 
 Using API_KEY, call functions. See ![best praticles](https://medium.com/geekculture/python-separate-code-and-sensitive-information-elegantly-ae21cec5fae2) for key storage
