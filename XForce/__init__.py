@@ -30,7 +30,7 @@ def all(term, auth):
     big_list.append(eval(threat_activities(term, auth))["rows"])
     big_list.append(eval(malware_analysis(term, auth))["rows"])
     big_list.append(eval(threat_groups(term, auth))["rows"])
-    big_list.append(eval(collector(term, auth))["rows"])
+    big_list.append(eval(collector(term, auth))["casefiles"])
     big_list.append(eval(industries(term, auth))["rows"])
     return big_list
 
