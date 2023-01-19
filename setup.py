@@ -5,7 +5,8 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='XForce',
-    version=0.333    author="Julio Lira",
+    version=0.4,
+    author="Julio Lira",
     author_email="jul10l1r4@disroot.org",
     description="IBM Security utilitary library in python. Search and query all sources: threat_activities and groups, malware_analysis, industries ",
     long_description=long_description,
