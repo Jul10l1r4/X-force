@@ -13,7 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/Jul10l1r4/x-force",
     packages=["XForce", "XForce.industries", "XForce.malware_analysis", "XForce.threat_activities", "XForce.threat_groups",
-              "XForce.details", "XForce.details.industry", "XForce.details.malware", "XForce.details.activity", 
+              "XForce.details.industry", "XForce.details.malware", "XForce.details.activity", 
              "XForce.details.group"],
     license="GPLv3",
     keywords="threat intelligence security ibm xforce x-force blueteam search query api exchange otx cti oct",
