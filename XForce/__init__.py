@@ -28,10 +28,6 @@ def industries(term, auth):
 
 def all(term, auth):
     big_list = []
-    big_list.append(loads(threat_activities(term, auth))["rows"])
-    big_list.append(loads(malware_analysis(term, auth))["rows"])
-    big_list.append(loads(threat_groups(term, auth))["rows"])
-    big_list.append(loads(collector(term, auth))["casefiles"])
-    big_list.append(loads(industries(term, auth))["rows"])
+    big_list = loads(threat_activities(term, auth))["rows"] + loads(malware_analysis(term, auth))["rows"] + loads(threat_groups(term, auth))["rows"] + loads(collector(term, auth))["casefiles"] + loads(industries(term, auth))["rows"]
     return big_list
 
