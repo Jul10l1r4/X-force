@@ -1,4 +1,5 @@
 from requests import get
+from json import loads
 
 api_url = "https://exchange.xforce.ibmcloud.com/api" 
 
